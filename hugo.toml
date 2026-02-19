@@ -27,3 +27,6 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   description = "Экспертные публикации по процессному подходу, операционной эффективности и бизнес-анализу."
+
+canonifyURLs = false
+relativeURLs = false
