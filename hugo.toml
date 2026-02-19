@@ -30,3 +30,4 @@ disableKinds = ["taxonomy", "term"]
 
 canonifyURLs = false
 relativeURLs = false
+enableRobotsTXT = true
