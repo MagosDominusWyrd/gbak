@@ -1,0 +1,92 @@
+{{ define "main" }}
+
+<section class="articles-page">
+
+  <header class="articles-header">
+    <h1>Статьи</h1>
+
+    <p class="articles-description">
+      Экспертные публикации по процессному подходу,
+      операционной эффективности и бизнес-анализу.
+    </p>
+  </header>
+
+  <div class="articles-search">
+    <input
+      type="search"
+      id="articlesSearch"
+      placeholder="Поиск по статьям..."
+      autocomplete="off"
+    />
+  </div>
+
+  <div class="articles-list" id="articlesList">
+
+    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "articles") }}
+
+    {{ range $paginator.Pages }}
+      {{ $searchText := printf "%s %s %s %s" .Title (or .Params.annotation "") (or .Params.author "") (.Date.Format "02.01.2006") }}
+
+      <article class="article-item" data-search="{{ $searchText | plainify | lower }}">
+        <h2 class="article-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+
+        {{ with .Summary }}
+          <p class="article-summary">{{ . }}</p>
+        {{ end }}
+
+        <p class="article-meta">
+          <span class="article-date">{{ .Date.Format "02.01.2006" }}</span>
+          {{ with .Params.author }}
+            <span class="article-sep"> · </span>
+            <span class="article-author">{{ . }}</span>
+          {{ end }}
+        </p>
+      </article>
+    {{ end }}
+
+    {{ if gt $paginator.TotalPages 1 }}
+      <nav class="pagination">
+        {{ if $paginator.HasPrev }}
+          <a href="{{ $paginator.Prev.URL }}">← Предыдущая</a>
+        {{ end }}
+        {{ if $paginator.HasNext }}
+          <a href="{{ $paginator.Next.URL }}">Следующая →</a>
+        {{ end }}
+      </nav>
+    {{ end }}
+
+  </div>
+
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("articlesSearch");
+  const items = Array.from(document.querySelectorAll(".article-item"));
+
+  if (!input || items.length === 0) return;
+
+  const applyFilter = () => {
+    const q = input.value.trim().toLowerCase();
+    items.forEach(el => {
+      const hay = (el.getAttribute("data-search") || "");
+      el.style.display = (q.length === 0 || hay.includes(q)) ? "" : "none";
+    });
+  };
+
+  // Поиск работает сразу при вводе
+  input.addEventListener("input", applyFilter);
+
+  // Enter не должен ничего "отправлять" — просто применяем фильтр
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      applyFilter();
+    }
+  });
+});
+</script>
+
+{{ end }}

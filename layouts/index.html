@@ -1,0 +1,79 @@
+{{ define "main" }}
+
+<section class="hero">
+  <h1>GBAK</h1>
+  <p>
+    Экспертные материалы по системному и бизнес-анализу.
+    Методология. Архитектура решений. Управляемость процессов.
+  </p>
+</section>
+
+<section class="about-site">
+  <h2>О сайте</h2>
+  <p>
+    Этот сайт — публичный архив экспертных материалов
+    по системному и бизнес-анализу.
+    Здесь публикуются открытые статьи, отражающие мой подход
+    к архитектуре процессов и управляемости систем.
+  </p>
+</section>
+
+<section class="latest-article">
+  <h2>Последняя статья</h2>
+
+  {{ $latest := first 1 (where .Site.RegularPages "Section" "articles") }}
+  {{ range $latest }}
+
+    <article class="article-item">
+
+      <h3>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h3>
+
+      {{ with .Summary }}
+        <p class="article-summary">{{ . }}</p>
+      {{ end }}
+
+      <div class="article-meta">
+        {{ .Date.Format "02.01.2006" }}
+        {{ with .Params.author }} · {{ . }}{{ end }}
+      </div>
+
+    </article>
+
+  {{ end }}
+
+</section>
+
+<section class="news">
+  <h2>Новости</h2>
+
+  {{ $news := first 3 (where .Site.RegularPages "Section" "news") }}
+  {{ range $news }}
+    <div class="news-item">
+      <p class="news-date">{{ .Date.Format "02.01.2006" }}</p>
+      <p class="news-text">{{ .Content }}</p>
+    </div>
+  {{ end }}
+</section>
+
+<section class="contact">
+  <h2>Сотрудничество</h2>
+  <p>Email: i.kartyushev@icloud.com</p>
+</section>
+
+<section class="boosty-library">
+  <h2>Моя библиотека Boosty</h2>
+  <p>
+    Моя библиотека Boosty содержит структурированные
+    методологические материалы: книгу, плейбуки и дополнительные публикации.
+  </p>
+  <p>
+    <a href="https://boosty.to/gbak_official" target="_blank" rel="noopener">
+      Перейти
+    </a>
+  </p>
+</section>
+
+{{ end }}
+

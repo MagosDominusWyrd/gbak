@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <link rel="icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+  <meta name="description" content="{{ with .Params.summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Params.summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+
+</head>
+
+<body>
+  <div class="container">
+    {{ partial "header.html" . }}
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+baseURL = "http://gbak.space/"
+languageCode = "ru"
+title = "GBAK"
+disableKinds = ["taxonomy", "term"]
+
+[pagination]
+  pagerSize = 8
+
+[permalinks]
+  articles = "/articles/:slug/"
+  news = "/news/:slug/"
+
+[mediaTypes]
+  [mediaTypes."application/json"]
+    suffixes = ["json"]
+    charset = "utf-8"
+
+[outputFormats]
+  [outputFormats.JSON]
+    mediaType = "application/json"
+    baseName = "index"
+    isPlainText = true
+    notAlternative = true
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[params]
+  description = "Экспертные публикации по процессному подходу, операционной эффективности и бизнес-анализу."
