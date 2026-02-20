@@ -4,7 +4,7 @@ date: 2026-02-20
 author: "Иван Картюшев"
 summary: "Немного о моей книге"
 slug: "about-my-book"
-draft: true
+draft: false
 ---
 
 ## Введение
