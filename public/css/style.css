@@ -14,7 +14,7 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 60px 40px;
+  padding: 0 40px;
 }
 
 /* =========================
@@ -91,7 +91,7 @@ h3 {
 
 .article {
   max-width: 880px; /* чуть шире книжного */
-  margin: 80px auto;
+  margin: 0 auto 80px auto;
 }
 
 .article-header {
@@ -392,6 +392,11 @@ footer {
   text-decoration: underline;
 }
 
+.books-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 /* =========================
    About section (home)
 ========================= */
@@ -419,4 +424,8 @@ main h1 {
 
 main {
   overflow: auto;
+}
+
+main {
+  padding-top: 48px;
 }
