@@ -2,18 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gbak.space/articles/</loc>
+    <loc>http://localhost:1313/articles/</loc>
+    <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gbak.space/books/playbook-72hours-diagnosis/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gbak.space/</loc>
+    <loc>http://localhost:1313/articles/about-my-book/</loc>
+    <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gbak.space/books/</loc>
+    <loc>http://localhost:1313/cooperation/</loc>
   </url><url>
-    <loc>https://gbak.space/about/</loc>
+    <loc>http://localhost:1313/books/playbook-72hours-diagnosis/</loc>
   </url><url>
-    <loc>https://gbak.space/books/process-reality/</loc>
+    <loc>http://localhost:1313/books/</loc>
   </url><url>
-    <loc>https://gbak.space/cooperation/</loc>
+    <loc>http://localhost:1313/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/books/process-reality/</loc>
   </url>
 </urlset>
