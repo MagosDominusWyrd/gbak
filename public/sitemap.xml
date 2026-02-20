@@ -2,21 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://magosdominuswyrd.github.io/gbak/news/</loc>
-    <lastmod>2026-02-18T00:00:00+00:00</lastmod>
+    <loc>https://gbak.space/articles/</loc>
   </url><url>
-    <loc>https://magosdominuswyrd.github.io/gbak/articles/</loc>
-    <lastmod>2026-02-18T00:00:00+00:00</lastmod>
+    <loc>https://gbak.space/books/playbook-72hours-diagnosis/</loc>
   </url><url>
-    <loc>https://magosdominuswyrd.github.io/gbak/</loc>
-    <lastmod>2026-02-18T00:00:00+00:00</lastmod>
+    <loc>https://gbak.space/</loc>
   </url><url>
-    <loc>https://magosdominuswyrd.github.io/gbak/news/</loc>
-    <lastmod>2026-02-18T00:00:00+00:00</lastmod>
+    <loc>https://gbak.space/books/</loc>
   </url><url>
-    <loc>https://magosdominuswyrd.github.io/gbak/articles/process-architecture-test/</loc>
-    <lastmod>2026-02-18T00:00:00+00:00</lastmod>
+    <loc>https://gbak.space/about/</loc>
   </url><url>
-    <loc>https://magosdominuswyrd.github.io/gbak/about/</loc>
+    <loc>https://gbak.space/books/process-reality/</loc>
+  </url><url>
+    <loc>https://gbak.space/cooperation/</loc>
   </url>
 </urlset>

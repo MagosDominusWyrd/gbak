@@ -361,3 +361,37 @@ footer {
   font-size: 13px;
   color: #666;
 }
+
+/* =========================
+   BOOKS LIST PAGE
+========================= */
+
+.books-page {
+  margin-top: 60px;
+}
+
+.books-header h1 {
+  margin-bottom: 16px;
+}
+
+.book-item {
+  margin-bottom: 28px;
+}
+
+.book-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  line-height: 1.35;
+}
+
+.book-description {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.book-link a {
+  font-size: 14px;
+  text-decoration: underline;
+}

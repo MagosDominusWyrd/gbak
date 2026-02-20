@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<section class="books-page">
+
+  <header class="books-header">
+    <h1>Книги</h1>
+  </header>
+
+  <div class="books-list">
+
+    {{ range .Pages }}
+
+      <article class="book-item">
+        <h2 class="book-title">
+          {{ .Title }}
+        </h2>
+
+        {{ with .Params.description }}
+          <p class="book-description">
+            {{ . }}
+          </p>
+        {{ end }}
+
+        {{ with .Params.buy_link }}
+          <p class="book-link">
+            <a href="{{ . }}" target="_blank" rel="noopener">
+              Перейти
+            </a>
+          </p>
+        {{ end }}
+
+      </article>
+
+    {{ end }}
+
+  </div>
+
+</section>
+
+{{ end }}
