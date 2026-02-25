@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Цепочка создания ценности как один из первичных инструментов бизнес-анализа</title>
+      <link>http://localhost:1313/articles/value-chain/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/value-chain/</guid>
+      <description>Цепочка создания ценности — это первичный инструмент системного бизнес-анализа, позволяющий увидеть, как организация трансформирует ресурсы в результат для клиента. В статье рассмотрены методы ее выявления, способы документирования и типичные ошибки аналитиков. Материал ориентирован на практическое применение в диагностике, реинжиниринге и цифровых инициативах.</description>
+    </item>
     <item>
       <title>Теория игр в работе бизнес-аналитика: фундамент и практическое применение</title>
       <link>http://localhost:1313/articles/game-theory-for-business-analyst/</link>
