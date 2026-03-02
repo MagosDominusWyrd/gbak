@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>APQC и Process Classification Framework: системный разбор и практическое применение</title>
+      <link>http://localhost:1313/articles/apqc-and-pcf-introduction/</link>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/apqc-and-pcf-introduction/</guid>
+      <description>Статья посвящена разбору APQC и их Process Classification Framework (PCF) — одной из наиболее распространенных эталонных моделей классификации бизнес-процессов в мире. В материале подробно раскрывается структура фреймворка, его логика и принципы построения, а также объясняется, чем PCF отличается от карт процессов и регламентов. Статья ориентирована на бизнес-аналитиков и руководителей, которым необходим системный инструмент для структурирования деятельности компании и повышения управляемости операционной модели.</description>
+    </item>
     <item>
       <title>KPI бизнес-аналитика: зона ответственности, границы роли и типичные ошибки оценки</title>
       <link>http://localhost:1313/articles/business-analyst-kpi/</link>
