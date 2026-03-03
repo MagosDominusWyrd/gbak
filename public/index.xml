@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор BABOK: Раздел 2</title>
+      <link>http://localhost:1313/articles/babok-chapter-1-article/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/babok-chapter-1-article/</guid>
+      <description>Статья о практическом разборе раздела 2 BABOK, который формирует концептуальный фундамент профессии бизнес-аналитика через модель базовых понятий (BACCM) и единый понятийный аппарат. В статье подробно разобраны ключевые элементы раздела и показано, как применять их для диагностики инициатив, управления заинтересованными сторонами и оценки ценности решений. Материал ориентирован на практикующих бизнес-аналитиков, стремящихся выстроить системное и стратегическое мышление в работе с изменениями.</description>
+    </item>
     <item>
       <title>APQC и Process Classification Framework: системный разбор и практическое применение</title>
       <link>http://localhost:1313/articles/apqc-and-pcf-introduction/</link>
