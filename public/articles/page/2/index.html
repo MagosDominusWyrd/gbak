@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles | GBAK</title>
+  <link rel="icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <meta name="description" content="Экспертные публикации по процессному подходу, операционной эффективности и бизнес-анализу.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Articles">
+  <meta property="og:description" content="Экспертные публикации по процессному подходу, операционной эффективности и бизнес-анализу.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:1313/articles/">
+  <meta property="og:site_name" content="GBAK">
+  <link rel="canonical" href="http://localhost:1313/articles/">
+
+  <meta property="og:image" content="http://localhost:1313/img/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+</head>
+
+<body>
+  <div class="container">
+    <header class="site-header">
+  <div class="logo-wrapper">
+    <a href="/">
+      <img src="/img/logo-gbak.png" alt="GBAK" class="site-logo">
+    </a>
+  </div>
+
+  <nav class="nav">
+    <a href="/">Главная</a>
+    <a href="/articles">Статьи</a>
+    <a href="/books">Книги</a>
+    <a href="/about">Об авторе</a>
+    <a href="/cooperation">Сотрудничество</a>
+  </nav>
+</header>
+
+
+    <main>
+      
+
+<section class="articles-page">
+
+  <header class="articles-header">
+    <h1>Статьи</h1>
+
+    <p class="articles-description">
+      Экспертные публикации по процессному подходу,
+      операционной эффективности и бизнес-анализу.
+    </p>
+  </header>
+
+  <div class="articles-search">
+    <input
+      type="search"
+      id="articlesSearch"
+      placeholder="Поиск по статьям..."
+      autocomplete="off"
+    />
+  </div>
+
+  <div class="articles-list" id="articlesList">
+
+    
+
+    
+      
+
+      <article class="article-item" data-search="от диагностики процессов к управлению ими: зачем я написал книгу  иван картюшев 20.02.2026">
+        <h2 class="article-title">
+          <a href="/articles/about-my-book/">От диагностики процессов к управлению ими: зачем я написал книгу</a>
+        </h2>
+
+        
+          <p class="article-summary">Немного о моей книге</p>
+        
+
+        <p class="article-meta">
+          <span class="article-date">20.02.2026</span>
+          
+            <span class="article-sep"> · </span>
+            <span class="article-author">Иван Картюшев</span>
+          
+        </p>
+      </article>
+    
+
+    
+      <nav class="pagination">
+        
+          <a href="/articles/">← Предыдущая</a>
+        
+        
+      </nav>
+    
+
+  </div>
+
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("articlesSearch");
+  const items = Array.from(document.querySelectorAll(".article-item"));
+
+  if (!input || items.length === 0) return;
+
+  const applyFilter = () => {
+    const q = input.value.trim().toLowerCase();
+    items.forEach(el => {
+      const hay = (el.getAttribute("data-search") || "");
+      el.style.display = (q.length === 0 || hay.includes(q)) ? "" : "none";
+    });
+  };
+
+  
+  input.addEventListener("input", applyFilter);
+
+  
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      applyFilter();
+    }
+  });
+});
+</script>
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p>© 2026 GBAK</p>
+</footer>
+
+
+  </div>
+</body>
+</html>

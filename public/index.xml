@@ -6,13 +6,20 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Process Mining в анализе бизнес-процессов: возможности, ограничения и соотношение с традиционными аналитическими ролями</title>
+      <link>http://localhost:1313/articles/about-process-mining/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/about-process-mining/</guid>
+      <description>В статье рассматривается технология Process Mining и ее применение в анализе бизнес-процессов. Проводится сравнительный анализ роли Process Mining Analyst с функциями бизнес-аналитика, процессного аналитика и системного аналитика. Отдельное внимание уделяется ограничениям технологии, причинам популяризации новой роли на рынке и условиям, при которых Process Mining действительно приносит практическую пользу.</description>
+    </item>
+    <item>
       <title>Разбор BABOK: Раздел 2</title>
-      <link>http://localhost:1313/articles/babok-chapter-1-article/</link>
+      <link>http://localhost:1313/articles/babok-chapter-2-article/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/articles/babok-chapter-1-article/</guid>
+      <guid>http://localhost:1313/articles/babok-chapter-2-article/</guid>
       <description>Статья о практическом разборе раздела 2 BABOK, который формирует концептуальный фундамент профессии бизнес-аналитика через модель базовых понятий (BACCM) и единый понятийный аппарат. В статье подробно разобраны ключевые элементы раздела и показано, как применять их для диагностики инициатив, управления заинтересованными сторонами и оценки ценности решений. Материал ориентирован на практикующих бизнес-аналитиков, стремящихся выстроить системное и стратегическое мышление в работе с изменениями.</description>
     </item>
     <item>
