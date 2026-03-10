@@ -6,10 +6,17 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Process Mining в анализе бизнес-процессов: возможности, ограничения и соотношение с традиционными аналитическими ролями</title>
+      <title>Избыточная автоматизация как управленческий риск</title>
+      <link>http://localhost:1313/articles/excessive-automation/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/excessive-automation/</guid>
+      <description>Избыточная автоматизация нередко возникает тогда, когда технологии внедряются без глубокого понимания процессов и реальных потребностей бизнеса. В статье рассматриваются причины этого явления, типичные сценарии его возникновения и управленческие риски, которые оно создает для организаций. Отдельное внимание уделено роли бизнес-аналитика в предотвращении автоматизации ради автоматизации и инструментам оценки ее целесообразности.</description>
+    </item>
+    <item>
+      <title>Process Mining в анализе бизнес-процессов: возможности, ограничения и сравнение с традиционными аналитическими ролями</title>
       <link>http://localhost:1313/articles/about-process-mining/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/articles/about-process-mining/</guid>
