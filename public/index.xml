@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 10 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Технический долг как следствие архитектурных и управленческих компромиссову</title>
+      <link>http://localhost:1313/articles/technical-debt/</link>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/technical-debt/</guid>
+      <description>Технический долг — неизбежное следствие архитектурных и управленческих компромиссов, возникающих в процессе развития информационных систем. В статье рассматривается природа технического долга, типичные сценарии его возникновения и признаки, по которым он начинает влиять на скорость и стоимость изменений. Отдельное внимание уделено роли бизнес-аналитиков и практическим подходам к диагностике и управлению техническим долгом.</description>
+    </item>
     <item>
       <title>Избыточная автоматизация как управленческий риск</title>
       <link>http://localhost:1313/articles/excessive-automation/</link>
