@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Жизненный цикл разработки (SDLC): структура, управление и практическое применение</title>
+      <link>http://localhost:1313/articles/sdlc-article/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/sdlc-article/</guid>
+      <description>Статья рассматривает жизненный цикл разработки программных систем (SDLC) как управленческую модель организации проектов создания информационных систем. Рассмотрена структура основных этапов жизненного цикла — от инициации и анализа требований до внедрения и сопровождения — а также их практическое значение для бизнеса. Дополнительно читателю предложены прикладные инструменты, позволяющие повысить прозрачность разработки и управляемость проектных решений.</description>
+    </item>
     <item>
       <title>Технический долг как следствие архитектурных и управленческих компромиссов</title>
       <link>http://localhost:1313/articles/technical-debt/</link>
