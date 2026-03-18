@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Теория ограничений Голдратта в бизнес-анализе: практическое применение, ограничения и ценность в работе бизнес-аналитика</title>
+      <link>http://localhost:1313/articles/theory-of-constraints/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/theory-of-constraints/</guid>
+      <description>В статье раскрывается практическое применение теории ограничений Голдратта в работе бизнес-аналитика, включая методы анализа, приоритизации и проектирования решений. Отдельное внимание уделено типичным ошибкам внедрения и инструменту, позволяющему применять подход на практике.</description>
+    </item>
     <item>
       <title>Жизненный цикл разработки (SDLC): структура, управление и практическое применение</title>
       <link>http://localhost:1313/articles/sdlc-article/</link>
