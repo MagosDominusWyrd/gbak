@@ -6,10 +6,17 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Теория ограничений Голдратта в бизнес-анализе: практическое применение, ограничения и ценность</title>
+      <title>Разбор BABOK: Раздел 3</title>
+      <link>http://localhost:1313/articles/babok-chapter-3-article/</link>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/babok-chapter-3-article/</guid>
+      <description>В статье подробно разобран третий раздел BABOK v3, посвященный планированию и мониторингу бизнес-анализа. Подробно рассмотрено, как бизнес-анализ превращается из набора разрозненных действий в управляемую систему: с понятным подходом, правилами взаимодействия, контуром решений и управлением информацией. В конце статьи читателю предлагается практический инструмент, который помогает бизнес-аналитику применять идеи BABOK в реальной работе, а не оставлять их на уровне теории.</description>
+    </item>
+    <item>
+      <title>Теория ограничений Голдратта в бизнес-анализе: практическое применение, ограничения и ценность в работе бизнес-аналитика</title>
       <link>http://localhost:1313/articles/theory-of-constraints/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/articles/theory-of-constraints/</guid>
