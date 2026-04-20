@@ -6,14 +6,21 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Wed, 01 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vision/Product Vision: роль, границы и практическое применение в работе бизнес-аналитика</title>
+      <link>http://localhost:1313/articles/vision-or-product-vision/</link>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/vision-or-product-vision/</guid>
+      <description>Статья рассматривает Vision/Product Vision как ключевой управленческий артефакт, задающий смысл и направление развития продукта или инициативы. В статье подробно разбираются его содержание, роль в системе бизнес-анализа и отличия от смежных артефактов, а также условия, при которых его использование становится критически важным. Отдельное внимание уделено типичным ошибкам формирования Vision и практическим аспектам его применения в работе бизнес-аналитика и управленческой команды.</description>
+    </item>
     <item>
       <title>Business Requirements Document (BRD): роль, структура и практика применения</title>
       <link>http://localhost:1313/articles/business-requirements-document/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/articles/business-requirements-document/</guid>
-      <description>Статья посвящена анализу роли Business Requirements Document (BRD) как инструмента управления изменениями, а не формального артефакта. В ней рассматриваются практические подходы к его формированию, основные разновидности и его место в системе бизнес-анализа. Особое внимание уделено использованию BRD в процессе реализации и типичным ошибкам, снижающим его ценность</description>
+      <description>Статья посвящена анализу Business Requirements Document (BRD) как инструмента управления изменениями, а не формального артефакта. В ней рассматриваются практические подходы к его формированию, основные разновидности и его место в системе бизнес-анализа. Особое внимание уделено использованию BRD в процессе реализации и типичным ошибкам, снижающим его ценность</description>
     </item>
     <item>
       <title>Разбор BABOK: Раздел 4</title>
