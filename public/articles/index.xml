@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 20 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Business Case: структура, функции и ограничения в управлении инициативами</title>
+      <link>http://localhost:1313/articles/business-case/</link>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/business-case/</guid>
+      <description>Статья раскрывает сущность Business Case как ключевого инструмента обоснования управленческих решений и оценки целесообразности инициатив. В ней рассматриваются его структура, роль в системе управления, а также отличия от смежных артефактов, таких как Vision и BRD. Особое внимание уделено типичным ошибкам и практике использования Business Case как рабочего инструмента, сохраняющего актуальность на протяжении всего жизненного цикла проекта.</description>
+    </item>
     <item>
       <title>Vision/Product Vision: роль, границы и практическое применение в работе бизнес-аналитика</title>
       <link>http://localhost:1313/articles/vision-or-product-vision/</link>
