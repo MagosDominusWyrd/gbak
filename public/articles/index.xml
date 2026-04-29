@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор BABOK: Раздел 5</title>
+      <link>http://localhost:1313/articles/babok-chapter-5-article/</link>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/babok-chapter-5-article/</guid>
+      <description>Статья посвящена подробному разбору раздела 5 BABOK, рассматривающего управление жизненным циклом требований как системную деятельность в рамках бизнес-анализа. В статье рассматриваются ключевые задачи ее предметной области — трассировка, поддержание, приоритизация, оценка изменений и утверждение требований — с акцентом на их практическое применение и взаимосвязь. В завершение читателю предлагается прикладной инструмент, позволяющий выстроить управляемую систему работы с требованиями в реальных проектах.</description>
+    </item>
     <item>
       <title>Business Case: структура, функции и ограничения в управлении инициативами</title>
       <link>http://localhost:1313/articles/business-case/</link>
