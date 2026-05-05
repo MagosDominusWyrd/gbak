@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stakeholder Map: инструмент управления влиянием и ожиданиями</title>
+      <link>http://localhost:1313/articles/stakeholder-map/</link>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/stakeholder-map/</guid>
+      <description>Stakeholder Map рассматривается как еще один ключевой артефакт бизнес-анализа, позволяющий управлять не только требованиями, но и контекстом их формирования через анализ влияния и ожиданий заинтересованных сторон. В этой статье подробно раскрываются структура и форматы Stakeholder Map, ее отличие от смежных артефактов, а также типичные ошибки, снижающие ее практическую ценность. Особое внимание уделено практическому применению этого инструмента и подходам к его использованию для повышения управляемости проектов и снижения рисков.</description>
+    </item>
     <item>
       <title>Разбор BABOK: Раздел 5</title>
       <link>http://localhost:1313/articles/babok-chapter-5-article/</link>

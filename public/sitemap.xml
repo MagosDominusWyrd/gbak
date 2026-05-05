@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/articles/</loc>
-    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/articles/stakeholder-map/</loc>
+    <lastmod>2026-05-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/articles/babok-chapter-5-article/</loc>
     <lastmod>2026-04-29T00:00:00+00:00</lastmod>
