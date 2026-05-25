@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>System Requirements Specification (SRS): структура, назначение и практическое применение</title>
+      <link>http://localhost:1313/articles/system-requirements-specification/</link>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/system-requirements-specification/</guid>
+      <description>В этой статье подробно рассматривается SRS (System Requirements Specification) как ключевой артефакт системного анализа, связывающий бизнес-требования и реализацию программной системы. В ней разбираются назначение SRS, ее структура, принципы формирования, использование в разработке и тестировании, а также особенности применения в современных Agile- и enterprise-проектах. Отдельное внимание в статье уделено типичным ошибкам при подготовке системных требований, проблемам неоднозначности и роли SRS в обеспечении инженерной определенности.</description>
+    </item>
     <item>
       <title>Разбор BABOK: Раздел 6</title>
       <link>http://localhost:1313/articles/babok-chapter-6-article/</link>
