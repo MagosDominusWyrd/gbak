@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 25 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор BABOK: Раздел 7</title>
+      <link>http://localhost:1313/articles/babok-chapter-7-article/</link>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/babok-chapter-7-article/</guid>
+      <description>В этой статье подробно рассматриваются задачи спецификации, верификации и валидации требований, построения архитектуры требований, анализа вариантов дизайна и оценки потенциальной ценности решений, а также их практическое применение в реальных проектах. Особое внимание в ней уделено системному мышлению бизнес-аналитика, типичным ошибкам при работе с требованиями и роли бизнес-аналитика как специалиста по снижению неопределенности и управлению организационными изменениями.</description>
+    </item>
     <item>
       <title>System Requirements Specification (SRS): структура, назначение и практическое применение</title>
       <link>http://localhost:1313/articles/system-requirements-specification/</link>
