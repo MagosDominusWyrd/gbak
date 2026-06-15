@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Wed, 10 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Модель данных: принципы построения, структура и практическое применение</title>
+      <link>http://localhost:1313/articles/data-model/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/data-model/</guid>
+      <description>Модель данных является одним из ключевых инструментов анализа и проектирования информационных систем, позволяющим формализовать структуру данных предметной области, их свойства и взаимосвязи. В этой статье рассматриваются основные элементы Data Model, подходы к ее построению, роль в работе бизнес-аналитика, а также типичные ошибки, возникающие при моделировании данных. Отдельное внимание уделено словарю данных (Data Dictionary), его связи с моделью данных и значению для формирования единого понимания структуры информации в организации.</description>
+    </item>
     <item>
       <title>Разбор BABOK: Раздел 8</title>
       <link>http://localhost:1313/articles/babok-chapter-8-article/</link>
