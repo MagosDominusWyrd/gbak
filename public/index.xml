@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Требования к интеграции (Integration Requirements): как описывать взаимодействие между системами</title>
+      <link>http://localhost:1313/articles/integration-requirements/</link>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/integration-requirements/</guid>
+      <description>Требования к интеграции (Integration Requirements) определяют правила взаимодействия между информационными системами и позволяют обеспечить надежный обмен данными в сложной цифровой среде. В этой статье подробно рассматриваются структура интеграционных требований, способы интеграции, вопросы обработки ошибок, безопасности, идемпотентности и согласованности данных, а также роль бизнес-аналитика в их формировании. Отдельное внимание уделено типичным ошибкам проектирования интеграций и практическим рекомендациям по подготовке качественной интеграционной документации.</description>
+    </item>
     <item>
       <title>Модель данных: принципы построения, структура и практическое применение</title>
       <link>http://localhost:1313/articles/data-model/</link>
