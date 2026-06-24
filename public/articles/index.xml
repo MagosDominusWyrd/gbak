@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Сократический метод в бизнес-анализе: как вопросы помогают находить правильные требования</title>
+      <link>http://localhost:1313/articles/socratic-method-ba/</link>
+      <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/socratic-method-ba/</guid>
+      <description>Сократический метод известен прежде всего как философский инструмент поиска истины через вопросы, однако его принципы находят практическое применение и в современном бизнес-анализе. В этой статье рассматривается сущность сократической иронии, ее роль в выявлении требований, анализе бизнес-правил, поиске первопричин проблем и проверке организационных мифов. Особое внимание уделяется практическим примерам использования метода, типичным ошибкам бизнес-аналитиков и ограничениям данного подхода в их профессиональной деятельности.</description>
+    </item>
     <item>
       <title>Требования к интеграции (Integration Requirements): как описывать взаимодействие между системами</title>
       <link>http://localhost:1313/articles/integration-requirements/</link>

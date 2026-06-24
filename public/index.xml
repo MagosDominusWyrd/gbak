@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Сократический метод в бизнес-анализе: как вопросы помогают находить правильные требования</title>
+      <link>http://localhost:1313/articles/socratic-method-ba/</link>
+      <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/socratic-method-ba/</guid>
+      <description>&lt;p&gt;Я думаю, одной из наиболее распространенных проблем бизнес-анализа является не отсутствие информации, а ложная уверенность в том, что информация уже известна. Заказчики уверены, что знают причину проблемы. Пользователи уверены, что понимают свои потребности. Руководители уверены, что видят оптимальное решение. Однако на практике многие проекты сталкиваются с тем, что первоначальные предположения оказываются неполными, противоречивыми или вовсе ошибочными.&lt;/p&gt;&#xA;&lt;p&gt;Для работы с подобными ситуациями бизнес-аналитик может использовать подход, известный еще со времен античной философии, — сократический метод.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Требования к интеграции (Integration Requirements): как описывать взаимодействие между системами</title>
       <link>http://localhost:1313/articles/integration-requirements/</link>
