@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 30 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Критерии приемки и оценки</title>
+      <link>http://localhost:1313/articles/bt-acceptance-and-evaluation-criteria/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-acceptance-and-evaluation-criteria/</guid>
+      <description>Техника BABOK «Критерии приемки и оценки» позволяет заранее определить условия успешной поставки решения и критерии достижения ожидаемых бизнес-результатов после его внедрения. В этой статье подробно рассматриваются различия между критериями приемки и критериями оценки, их роль в жизненном цикле требований, а также подходы к формированию измеримых и проверяемых критериев. Отдельное внимание в ней уделено практическим примерам, типичным ошибкам бизнес-аналитиков и рекомендациям по использованию техники в классических и Agile-проектах.</description>
+    </item>
     <item>
       <title>Разбор BABOK: Раздел 9</title>
       <link>http://localhost:1313/articles/babok-chapter-9-article/</link>
