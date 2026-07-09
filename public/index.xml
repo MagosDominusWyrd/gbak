@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Fri, 03 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Нужна ли заинтересованность владельца процесса? Мой критический взгляд на один из главных мифов процессного управления</title>
+      <link>http://localhost:1313/articles/involvement-of-the-process-owner/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/involvement-of-the-process-owner/</guid>
+      <description>В этой статье мной критически рассматривается распространенный тезис о необходимости высокой заинтересованности владельцев процессов как обязательного условия успешного процессного управления. На основе практических наблюдений анализируются причины, по которым владельцы процессов могут сопротивляться изменениям или оставаться к ним безразличными, а также показывается, что чрезмерная вовлеченность в ряде случаев способна приносить не меньше вреда, чем ее отсутствие. Мной предлагается альтернативный подход, согласно которому для эффективной работы процессного офиса достаточно профессионального сотрудничества владельца процесса и отсутствия сознательного противодействия процессным инициативам.</description>
+    </item>
     <item>
       <title>Разбор техник BABOK: Критерии приемки и оценки</title>
       <link>http://localhost:1313/articles/bt-acceptance-and-evaluation-criteria/</link>
