@@ -2,6 +2,12 @@ name: Telegram article notification
 
 on:
   workflow_dispatch:
+    inputs:
+      article_file:
+        description: "Путь к статье, например content/articles/example.md"
+        required: true
+        type: string
+
   push:
     branches:
       - main
@@ -25,13 +31,13 @@ jobs:
           set -euo pipefail
 
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "Ручной тест: ищем последнюю статью по дате изменения файла."
+            ARTICLE_FILE="${{ inputs.article_file }}"
+            echo "Ручной тест файла: $ARTICLE_FILE"
 
-            ARTICLE_FILE=$(find content/articles -type f -name "*.md" \
-              -printf "%T@ %p\n" \
-              | sort -nr \
-              | head -n 1 \
-              | cut -d' ' -f2-)
+            if [ ! -f "$ARTICLE_FILE" ]; then
+              echo "Файл не найден: $ARTICLE_FILE"
+              exit 1
+            fi
           else
             ARTICLE_FILE=$(git diff --diff-filter=A --name-only HEAD^ HEAD \
               | grep '^content/articles/.*\.md$' \
