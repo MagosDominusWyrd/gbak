@@ -8,6 +8,12 @@ on:
         required: true
         type: string
 
+      send_to_telegram:
+        description: "Отправить уведомление в Telegram"
+        required: true
+        default: false
+        type: boolean
+
   push:
     branches:
       - main
@@ -15,7 +21,7 @@ on:
       - "content/articles/**.md"
 
 jobs:
-  detect-article:
+  notify:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +30,7 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Find newly added article
+      - name: Find and read article
         id: article
         shell: bash
         run: |
@@ -32,7 +38,7 @@ jobs:
 
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             ARTICLE_FILE="${{ inputs.article_file }}"
-            echo "Ручной тест файла: $ARTICLE_FILE"
+            echo "Ручная проверка файла: $ARTICLE_FILE"
 
             if [ ! -f "$ARTICLE_FILE" ]; then
               echo "Файл не найден: $ARTICLE_FILE"
@@ -50,45 +56,125 @@ jobs:
             exit 0
           fi
 
-          TITLE=$(sed -n '/^---$/,/^---$/p' "$ARTICLE_FILE" \
+          FRONT_MATTER=$(sed -n '/^---$/,/^---$/p' "$ARTICLE_FILE")
+
+          TITLE=$(printf '%s\n' "$FRONT_MATTER" \
             | sed -n 's/^title:[[:space:]]*"\(.*\)"$/\1/p' \
             | head -n 1)
 
-          SUMMARY=$(sed -n '/^---$/,/^---$/p' "$ARTICLE_FILE" \
+          SUMMARY=$(printf '%s\n' "$FRONT_MATTER" \
             | sed -n 's/^summary:[[:space:]]*"\(.*\)"$/\1/p' \
             | head -n 1)
 
-          SLUG=$(sed -n '/^---$/,/^---$/p' "$ARTICLE_FILE" \
+          SLUG=$(printf '%s\n' "$FRONT_MATTER" \
             | sed -n 's/^slug:[[:space:]]*"\(.*\)"$/\1/p' \
             | head -n 1)
 
-          DRAFT=$(sed -n '/^---$/,/^---$/p' "$ARTICLE_FILE" \
+          DRAFT=$(printf '%s\n' "$FRONT_MATTER" \
             | sed -n 's/^draft:[[:space:]]*\(.*\)$/\1/p' \
             | head -n 1)
 
+          DRAFT=$(printf '%s' "$DRAFT" | tr -d '[:space:]')
+
           if [ "$DRAFT" != "false" ]; then
-            echo "Файл найден, но статья является черновиком."
+            echo "Статья является черновиком. Уведомление не требуется."
             echo "found=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          if [ -z "$TITLE" ] || [ -z "$SLUG" ]; then
-            echo "Не удалось получить title или slug."
+          if [ -z "$TITLE" ]; then
+            echo "В статье отсутствует поле title."
+            exit 1
+          fi
+
+          if [ -z "$SLUG" ]; then
+            echo "В статье отсутствует поле slug."
             exit 1
           fi
 
           ARTICLE_URL="https://gbak.space/articles/${SLUG}/"
 
-          echo "found=true" >> "$GITHUB_OUTPUT"
-          echo "file=$ARTICLE_FILE" >> "$GITHUB_OUTPUT"
-          echo "title=$TITLE" >> "$GITHUB_OUTPUT"
-          echo "summary=$SUMMARY" >> "$GITHUB_OUTPUT"
-          echo "url=$ARTICLE_URL" >> "$GITHUB_OUTPUT"
+          {
+            echo "found=true"
+            echo "file=$ARTICLE_FILE"
+            echo "title=$TITLE"
+            echo "url=$ARTICLE_URL"
 
-      - name: Show detected article
+            echo "summary<<EOF"
+            echo "$SUMMARY"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Prepare Telegram message
         if: steps.article.outputs.found == 'true'
+        id: message
+        shell: bash
+        env:
+          ARTICLE_TITLE: ${{ steps.article.outputs.title }}
+          ARTICLE_SUMMARY: ${{ steps.article.outputs.summary }}
+          ARTICLE_URL: ${{ steps.article.outputs.url }}
         run: |
-          echo "Файл: ${{ steps.article.outputs.file }}"
-          echo "Заголовок: ${{ steps.article.outputs.title }}"
-          echo "Аннотация: ${{ steps.article.outputs.summary }}"
-          echo "Ссылка: ${{ steps.article.outputs.url }}"
+          set -euo pipefail
+
+          {
+            echo "text<<EOF"
+            echo "🆕 <b>Новая статья на GBAK</b>"
+            echo
+            echo "<b>${ARTICLE_TITLE}</b>"
+
+            if [ -n "${ARTICLE_SUMMARY}" ]; then
+              echo
+              echo "${ARTICLE_SUMMARY}"
+            fi
+
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+          echo "Подготовлено уведомление:"
+          echo
+          echo "Новая статья на GBAK"
+          echo
+          echo "$ARTICLE_TITLE"
+
+          if [ -n "$ARTICLE_SUMMARY" ]; then
+            echo
+            echo "$ARTICLE_SUMMARY"
+          fi
+
+          echo
+          echo "Кнопка: Читать статью"
+          echo "Ссылка: $ARTICLE_URL"
+
+      - name: Send notification to Telegram
+        if: >
+          steps.article.outputs.found == 'true' &&
+          (
+            github.event_name == 'push' ||
+            inputs.send_to_telegram == true
+          )
+        shell: bash
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          MESSAGE_TEXT: ${{ steps.message.outputs.text }}
+          ARTICLE_URL: ${{ steps.article.outputs.url }}
+        run: |
+          set -euo pipefail
+
+          BUTTON_JSON=$(printf \
+            '{"inline_keyboard":[[{"text":"📖 Читать статью","url":"%s"}]]}' \
+            "$ARTICLE_URL")
+
+          RESPONSE=$(curl \
+            --fail \
+            --silent \
+            --show-error \
+            --request POST \
+            "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHANNEL_ID}" \
+            --data-urlencode "text=${MESSAGE_TEXT}" \
+            --data-urlencode "parse_mode=HTML" \
+            --data-urlencode "reply_markup=${BUTTON_JSON}" \
+            --data-urlencode "disable_web_page_preview=true")
+
+          echo "Telegram принял уведомление."
