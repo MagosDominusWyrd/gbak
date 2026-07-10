@@ -18,26 +18,33 @@ on:
     branches:
       - main
     paths:
-      - "content/articles/**.md"
+      - "content/articles/**/*.md"
+      - "content/articles/*.md"
 
 jobs:
   notify:
     runs-on: ubuntu-latest
+    timeout-minutes: 70
 
     steps:
       - name: Download repository
         uses: actions/checkout@v5
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - name: Find and read article
         id: article
         shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          MANUAL_ARTICLE_FILE: ${{ inputs.article_file }}
+          PUSH_BEFORE: ${{ github.event.before }}
+          PUSH_AFTER: ${{ github.event.after }}
         run: |
           set -euo pipefail
 
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            ARTICLE_FILE="${{ inputs.article_file }}"
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            ARTICLE_FILE="$MANUAL_ARTICLE_FILE"
             echo "Ручная проверка файла: $ARTICLE_FILE"
 
             if [ ! -f "$ARTICLE_FILE" ]; then
@@ -45,8 +52,12 @@ jobs:
               exit 1
             fi
           else
-            ARTICLE_FILE=$(git diff --diff-filter=A --name-only HEAD^ HEAD \
-              | grep '^content/articles/.*\.md$' \
+            ARTICLE_FILE=$(git diff \
+              --diff-filter=A \
+              --name-only \
+              "$PUSH_BEFORE" \
+              "$PUSH_AFTER" \
+              | grep -E '^content/articles/.*\.md$' \
               | head -n 1 || true)
           fi
 
@@ -55,6 +66,8 @@ jobs:
             echo "found=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+
+          echo "Найдена статья: $ARTICLE_FILE"
 
           FRONT_MATTER=$(sed -n '/^---$/,/^---$/p' "$ARTICLE_FILE")
 
@@ -72,18 +85,22 @@ jobs:
 
           DRAFT=$(printf '%s\n' "$FRONT_MATTER" \
             | sed -n 's/^draft:[[:space:]]*\(.*\)$/\1/p' \
-            | head -n 1)
-
-          DRAFT=$(printf '%s' "$DRAFT" | tr -d '[:space:]')
+            | head -n 1 \
+            | tr -d '[:space:]')
 
           if [ "$DRAFT" != "false" ]; then
-            echo "Статья является черновиком. Уведомление не требуется."
+            echo "Статья является черновиком или поле draft заполнено некорректно."
             echo "found=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
           if [ -z "$TITLE" ]; then
             echo "В статье отсутствует поле title."
+            exit 1
+          fi
+
+          if [ -z "$SUMMARY" ]; then
+            echo "В статье отсутствует поле summary."
             exit 1
           fi
 
@@ -97,8 +114,11 @@ jobs:
           {
             echo "found=true"
             echo "file=$ARTICLE_FILE"
-            echo "title=$TITLE"
             echo "url=$ARTICLE_URL"
+
+            echo "title<<EOF"
+            echo "$TITLE"
+            echo "EOF"
 
             echo "summary<<EOF"
             echo "$SUMMARY"
@@ -116,17 +136,24 @@ jobs:
         run: |
           set -euo pipefail
 
+          escape_html() {
+            printf '%s' "$1" \
+              | sed \
+                  -e 's/&/\&amp;/g' \
+                  -e 's/</\&lt;/g' \
+                  -e 's/>/\&gt;/g'
+          }
+
+          SAFE_TITLE=$(escape_html "$ARTICLE_TITLE")
+          SAFE_SUMMARY=$(escape_html "$ARTICLE_SUMMARY")
+
           {
             echo "text<<EOF"
             echo "🆕 <b>Новая статья на GBAK</b>"
             echo
-            echo "<b>${ARTICLE_TITLE}</b>"
-
-            if [ -n "${ARTICLE_SUMMARY}" ]; then
-              echo
-              echo "${ARTICLE_SUMMARY}"
-            fi
-
+            echo "<b>${SAFE_TITLE}</b>"
+            echo
+            echo "${SAFE_SUMMARY}"
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
 
@@ -135,15 +162,55 @@ jobs:
           echo "Новая статья на GBAK"
           echo
           echo "$ARTICLE_TITLE"
-
-          if [ -n "$ARTICLE_SUMMARY" ]; then
-            echo
-            echo "$ARTICLE_SUMMARY"
-          fi
-
+          echo
+          echo "$ARTICLE_SUMMARY"
           echo
           echo "Кнопка: Читать статью"
           echo "Ссылка: $ARTICLE_URL"
+
+      - name: Wait for article availability
+        if: >
+          steps.article.outputs.found == 'true' &&
+          (
+            github.event_name == 'push' ||
+            inputs.send_to_telegram == true
+          )
+        shell: bash
+        env:
+          ARTICLE_URL: ${{ steps.article.outputs.url }}
+        run: |
+          set -euo pipefail
+
+          MAX_ATTEMPTS=60
+          WAIT_SECONDS=60
+
+          for ATTEMPT in $(seq 1 "$MAX_ATTEMPTS"); do
+            HTTP_STATUS=$(curl \
+              --silent \
+              --location \
+              --output /dev/null \
+              --write-out "%{http_code}" \
+              --max-time 30 \
+              "$ARTICLE_URL" || true)
+
+            if [ "$HTTP_STATUS" = "200" ]; then
+              echo "Статья доступна. Получен HTTP 200."
+              echo "Попытка: $ATTEMPT из $MAX_ATTEMPTS."
+              exit 0
+            fi
+
+            echo "Статья пока недоступна."
+            echo "HTTP-статус: ${HTTP_STATUS:-нет ответа}."
+            echo "Попытка: $ATTEMPT из $MAX_ATTEMPTS."
+
+            if [ "$ATTEMPT" -lt "$MAX_ATTEMPTS" ]; then
+              echo "Следующая проверка через 1 минуту."
+              sleep "$WAIT_SECONDS"
+            fi
+          done
+
+          echo "Статья не стала доступна в течение 60 минут."
+          exit 1
 
       - name: Send notification to Telegram
         if: >
