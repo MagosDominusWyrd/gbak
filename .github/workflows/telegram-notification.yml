@@ -1,20 +1,88 @@
-name: Telegram notification
+name: Telegram article notification
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "content/articles/**.md"
 
 jobs:
-  send-notification:
+  detect-article:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Send message to Telegram
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+      - name: Download repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Find newly added article
+        id: article
+        shell: bash
         run: |
-          curl --fail --silent --show-error \
-            --request POST \
-            "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-            --data-urlencode "chat_id=${TELEGRAM_CHANNEL_ID}" \
-            --data-urlencode "text=Тестовое уведомление от GBAK News"
+          set -euo pipefail
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Ручной тест: ищем последнюю статью по дате изменения файла."
+
+            ARTICLE_FILE=$(find content/articles -type f -name "*.md" \
+              -printf "%T@ %p\n" \
+              | sort -nr \
+              | head -n 1 \
+              | cut -d' ' -f2-)
+          else
+            ARTICLE_FILE=$(git diff --diff-filter=A --name-only HEAD^ HEAD \
+              | grep '^content/articles/.*\.md$' \
+              | head -n 1 || true)
+          fi
+
+          if [ -z "${ARTICLE_FILE:-}" ]; then
+            echo "Новая статья не найдена."
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          TITLE=$(sed -n '/^---$/,/^---$/p' "$ARTICLE_FILE" \
+            | sed -n 's/^title:[[:space:]]*"\(.*\)"$/\1/p' \
+            | head -n 1)
+
+          SUMMARY=$(sed -n '/^---$/,/^---$/p' "$ARTICLE_FILE" \
+            | sed -n 's/^summary:[[:space:]]*"\(.*\)"$/\1/p' \
+            | head -n 1)
+
+          SLUG=$(sed -n '/^---$/,/^---$/p' "$ARTICLE_FILE" \
+            | sed -n 's/^slug:[[:space:]]*"\(.*\)"$/\1/p' \
+            | head -n 1)
+
+          DRAFT=$(sed -n '/^---$/,/^---$/p' "$ARTICLE_FILE" \
+            | sed -n 's/^draft:[[:space:]]*\(.*\)$/\1/p' \
+            | head -n 1)
+
+          if [ "$DRAFT" != "false" ]; then
+            echo "Файл найден, но статья является черновиком."
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if [ -z "$TITLE" ] || [ -z "$SLUG" ]; then
+            echo "Не удалось получить title или slug."
+            exit 1
+          fi
+
+          ARTICLE_URL="https://gbak.space/articles/${SLUG}/"
+
+          echo "found=true" >> "$GITHUB_OUTPUT"
+          echo "file=$ARTICLE_FILE" >> "$GITHUB_OUTPUT"
+          echo "title=$TITLE" >> "$GITHUB_OUTPUT"
+          echo "summary=$SUMMARY" >> "$GITHUB_OUTPUT"
+          echo "url=$ARTICLE_URL" >> "$GITHUB_OUTPUT"
+
+      - name: Show detected article
+        if: steps.article.outputs.found == 'true'
+        run: |
+          echo "Файл: ${{ steps.article.outputs.file }}"
+          echo "Заголовок: ${{ steps.article.outputs.title }}"
+          echo "Аннотация: ${{ steps.article.outputs.summary }}"
+          echo "Ссылка: ${{ steps.article.outputs.url }}"
