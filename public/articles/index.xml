@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Управление бэклогом</title>
+      <link>http://localhost:1313/articles/bt-backlog-management/</link>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-backlog-management/</guid>
+      <description>Техника «Управление бэклогом» позволяет системно управлять требованиями, инициативами и другими элементами развития решения, обеспечивая их актуальность, прозрачность и соответствие бизнес-приоритетам. В этой статье рассматриваются принципы формирования и сопровождения бэклога, его применение в Agile и классических проектах, а также подходы к приоритизации и постепенной детализации требований. Особое внимание в ней уделено практическим примерам, типичным ошибкам бизнес-аналитиков и рекомендациям, позволяющим превратить бэклог из простого списка задач в эффективный инструмент управления ценностью изменений.</description>
+    </item>
     <item>
       <title>Нужна ли заинтересованность владельца процесса? Мой критический взгляд на один из главных мифов процессного управления</title>
       <link>http://localhost:1313/articles/involvement-of-the-process-owner/</link>
