@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Fri, 10 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Сбалансированная система показателей</title>
+      <link>http://localhost:1313/articles/bt-balanced-scorecard/</link>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-balanced-scorecard/</guid>
+      <description>Сбалансированная система показателей представляет собой один из ключевых инструментов стратегического управления, позволяющий оценивать эффективность организации не только через финансовые результаты, но и через состояние бизнес-процессов, отношения с клиентами, а также способность к обучению и развитию. В этой статье мной подробно рассматриваются назначение этой техники, ее элементы в соответствии с BABOK, особенности практического применения, типичные ошибки и ограничения использования. Отдельное внимание мной уделено роли бизнес-аналитика при разработке системы показателей и также приведен пример ее использования в проекте внедрения CRM-системы.</description>
+    </item>
     <item>
       <title>Разбор техник BABOK: Управление бэклогом</title>
       <link>http://localhost:1313/articles/bt-backlog-management/</link>
