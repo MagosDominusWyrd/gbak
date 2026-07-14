@@ -2,6 +2,8 @@
 title: "Разбор BABOK: Раздел 1"
 date: 2026-02-22
 author: "Иван Картюшев"
+categories:
+  - BABOK
 summary: "Статья о практическом разборе раздела 1 BABOK, которая открывает этот цикл. Может быть интересна начинающим и не очень бизнес-аналитикам"
 slug: "babok-chapter-1-article"
 draft: false

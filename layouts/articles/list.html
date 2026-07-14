@@ -11,6 +11,18 @@
     </p>
   </header>
 
+  {{/* Собираем все уникальные категории */}}
+
+{{ $categories := slice }}
+{{ range (where .Site.RegularPages "Section" "articles") }}
+    {{ with .Params.categories }}
+        {{ range . }}
+            {{ $categories = $categories | append . }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ $categories = uniq $categories | sort }}
+  
   <div class="articles-search">
     <input
       type="search"
@@ -20,14 +32,52 @@
     />
   </div>
 
+  <div class="category-filter" id="categoryFilter">
+    <button
+        class="category-filter-button"
+        id="categoryFilterButton"
+        type="button"
+        aria-expanded="false"
+    >
+        Все категории
+    </button>
+
+    <div class="category-filter-dropdown" id="categoryFilterDropdown" hidden>
+        <label class="category-filter-option">
+            <input
+                type="checkbox"
+                id="categoryAll"
+                value="all"
+                checked
+            >
+            <span>Все</span>
+        </label>
+
+        {{ range $categories }}
+            <label class="category-filter-option">
+                <input
+                    type="checkbox"
+                    class="category-checkbox"
+                    value="{{ . }}"
+                >
+                <span>{{ . }}</span>
+            </label>
+        {{ end }}
+    </div>
+</div>
+
   <div class="articles-list" id="articlesList">
 
-    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "articles") }}
+    {{ $articles := where .Site.RegularPages "Section" "articles" }}
 
-    {{ range $paginator.Pages }}
-      {{ $searchText := printf "%s %s %s %s" .Title (or .Params.annotation "") (or .Params.author "") (.Date.Format "02.01.2006") }}
+    {{ range $articles.ByDate.Reverse }}
+      {{ $searchText := printf "%s %s %s %s %s" .Title (or .Params.annotation "") (or .Params.author "") (.Date.Format "02.01.2006") .Plain }}
 
-      <article class="article-item" data-search="{{ $searchText | plainify | lower }}">
+      <article
+        class="article-item"
+        data-search="{{ $searchText | plainify | lower }}"
+        data-categories="{{ delimit (.Params.categories | default (slice)) "|" }}">
+
         <h2 class="article-title">
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </h2>
@@ -46,47 +96,15 @@
       </article>
     {{ end }}
 
-    {{ if gt $paginator.TotalPages 1 }}
-      <nav class="pagination">
-        {{ if $paginator.HasPrev }}
-          <a href="{{ $paginator.Prev.URL }}">← Предыдущая</a>
-        {{ end }}
-        {{ if $paginator.HasNext }}
-          <a href="{{ $paginator.Next.URL }}">Следующая →</a>
-        {{ end }}
-      </nav>
-    {{ end }}
-
   </div>
+
+  <p class="articles-empty" id="articlesEmpty" hidden>
+  По вашему запросу статьи не найдены.
+  Попробуйте изменить текст поиска или выбрать другие категории.
+  </p>
 
 </section>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const input = document.getElementById("articlesSearch");
-  const items = Array.from(document.querySelectorAll(".article-item"));
-
-  if (!input || items.length === 0) return;
-
-  const applyFilter = () => {
-    const q = input.value.trim().toLowerCase();
-    items.forEach(el => {
-      const hay = (el.getAttribute("data-search") || "");
-      el.style.display = (q.length === 0 || hay.includes(q)) ? "" : "none";
-    });
-  };
-
-  // Поиск работает сразу при вводе
-  input.addEventListener("input", applyFilter);
-
-  // Enter не должен ничего "отправлять" — просто применяем фильтр
-  input.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      applyFilter();
-    }
-  });
-});
-</script>
+<script src="/js/search.js"></script>
 
 {{ end }}
