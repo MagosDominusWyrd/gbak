@@ -6,13 +6,20 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Wed, 15 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Разбор техник BABOK: Мозговой штурм</title>
+      <link>http://localhost:1313/articles/bt-brainstorming/</link>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-brainstorming/</guid>
+      <description>Мозговой штурм в BABOK рассматривается не как свободное обсуждение, а как структурированная техника генерации большого количества идей, направленная на поиск направлений для дальнейшего анализа. В этой статье мной подробно разбираются этапы подготовки, проведения и завершения сессии, практические рекомендации по модерации, типичные ошибки и ограничения метода. Материал дополнен подробным примером применения техники в работе бизнес-аналитика и показывает, как превратить коллективную генерацию идей в эффективный инструмент выявления требований и поиска решений.</description>
+    </item>
+    <item>
       <title>Разбор техник BABOK: Бенчмаркинг и анализ рынка</title>
-      <link>http://localhost:1313/articles/benchmarking-and-market-analysis/</link>
+      <link>http://localhost:1313/articles/bt-benchmarking-and-market-analysis/</link>
       <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/articles/benchmarking-and-market-analysis/</guid>
+      <guid>http://localhost:1313/articles/bt-benchmarking-and-market-analysis/</guid>
       <description>Бенчмаркинг и анализ рынка позволяют бизнес-аналитику принимать решения, опираясь не только на внутренний опыт организации, но и на лучшие практики отрасли и существующие отраслевые решения. В этой статье мной подробно рассматриваются назначение техники, ее элементы согласно BABOK, особенности практического применения, типичные ошибки и ограничения, а также приводится развернутый пример использования при выборе CRM-платформы. Материал поможет вам понять, как грамотно использовать результаты исследования рынка и бенчмаркинга для обоснования будущих изменений и выбора оптимальных решений.</description>
     </item>
     <item>
