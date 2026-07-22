@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 20 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Анализ возможностей бизнеса</title>
+      <link>http://localhost:1313/articles/bt-business-capability-analysis/</link>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-business-capability-analysis/</guid>
+      <description>Техника BABOK «Анализ возможностей бизнеса» позволяет рассматривать организацию через ее способности достигать стратегических целей, а не через существующие процессы, подразделения или информационные системы. В этой статье мной подробно разобраны назначение техники, все элементы, выделенные в BABOK, особенности их практического применения, а также приведен пример использования карты возможностей для планирования изменений. Отдельное внимание мной уделено типичным ошибкам, ограничениям техники и практическим рекомендациям, помогающим применять анализ возможностей бизнеса при формировании стратегии развития предприятия.</description>
+    </item>
     <item>
       <title>Разбор техник BABOK: Мозговой штурм</title>
       <link>http://localhost:1313/articles/bt-brainstorming/</link>
