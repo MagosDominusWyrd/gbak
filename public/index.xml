@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Бизнес-кейсы</title>
+      <link>http://localhost:1313/articles/bt-business-cases/</link>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-business-cases/</guid>
+      <description>Бизнес-кейс является одной из техник BABOK, позволяющей обосновать необходимость изменений через анализ потребностей, сравнение альтернатив и оценку ожидаемой ценности. В этой статье мной подробно рассмотрены все элементы этой техники, а также показано, как бизнес-аналитик использует бизнес-кейс для подготовки управленческих решений и выбора оптимального варианта реализации инициативы. Материал дополнен практическим примером, разбором типичных ошибок и рекомендациями по созданию обоснованных и объективных бизнес-кейсов.</description>
+    </item>
     <item>
       <title>Разбор техник BABOK: Анализ возможностей бизнеса</title>
       <link>http://localhost:1313/articles/bt-business-capability-analysis/</link>
