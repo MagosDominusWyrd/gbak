@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 03 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Групповые игры</title>
+      <link>http://localhost:1313/articles/bt-collaborative-games/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-collaborative-games/</guid>
+      <description>Эта статья посвящена технике BABOK «Групповые игры», предназначенной для организации совместной работы заинтересованных сторон и формирования общего понимания бизнес-проблем и возможных решений. В ней рассматриваются назначение этой техники, ее ключевые элементы, особенности проведения, практическое применение, а также подробный пример использования в проекте внедрения CRM-системы. Отдельное внимание мной уделено хорошим и плохим практикам, типичным ошибкам, ограничениям метода и рекомендациям по эффективному использованию групповых игр в деятельности бизнес-аналитика.</description>
+    </item>
     <item>
       <title>Разбор техник BABOK: Анализ бизнес-правил</title>
       <link>http://localhost:1313/articles/bt-business-rules-analysis/</link>
