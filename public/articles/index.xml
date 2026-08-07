@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Киборги, Кентавры и Самоавтоматизаторы: как генеративный ИИ меняет интеллектуальный труд</title>
+      <link>http://localhost:1313/articles/cyborgs-centaurs-and-self-automators/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/cyborgs-centaurs-and-self-automators/</guid>
+      <description>В этой статье мной рассматривается исследование «Cyborgs, Centaurs and Self-Automators», посвященное трем устойчивым моделям взаимодействия специалистов с генеративным ИИ в процессе их интеллектуального труда. На основе данных эксперимента с консультантами Boston Consulting Group разбираются модели Cyborg, Centaur и Self-Automator, различающиеся способом распределения контроля между человеком и языковой моделью. Особое внимание уделяется тому, как разные режимы взаимодействия влияют не только на качество решений, но и на развитие профессиональной экспертизы. Рассматриваются три траектории skilling: upskilling, newskilling и no skilling, а также их связь с соответствующими моделями работы с ИИ. Отдельно мной анализируются практические последствия исследования для специалистов интеллектуального труда и, в частности, для бизнес-аналитиков. В заключении показано, почему ключевым вопросом становится не само использование генеративного ИИ, а архитектура сотрудничества человека и системы на протяжении всего процесса решения задачи.</description>
+    </item>
     <item>
       <title>Разбор техник BABOK: Групповые игры</title>
       <link>http://localhost:1313/articles/bt-collaborative-games/</link>
