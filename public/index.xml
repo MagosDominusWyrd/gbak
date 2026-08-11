@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Моделирование понятий</title>
+      <link>http://localhost:1313/articles/bt-concept-modelling/</link>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-concept-modelling/</guid>
+      <description>Моделирование понятий — это техника BABOK, предназначенная для систематизации лексикона бизнеса и формирования согласованного представления знаний о предметной области. В этой статье мной рассматриваются основные элементы техники: понятия-существительные, глагольные понятия и другие связи, а также их применение при выявлении, анализе текущего состояния и спецификации требований. На практическом примере показано, как модель понятий помогает устранить терминологические противоречия, сформировать общий язык заинтересованных сторон и создать семантическую основу для требований и бизнес-правил.</description>
+    </item>
     <item>
       <title>Киборги, Кентавры и Самоавтоматизаторы: как генеративный ИИ меняет интеллектуальный труд</title>
       <link>http://localhost:1313/articles/cyborgs-centaurs-and-self-automators/</link>
