@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 11 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Словарь данных</title>
+      <link>http://localhost:1313/articles/bt-data-dictionary/</link>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-data-dictionary/</guid>
+      <description>Техника BABOK «Словарь данных» предназначена для стандартизации определений элементов данных и формирования их единого понимания заинтересованными сторонами. В этой статье рассматриваются структура словаря данных, правила описания простых и составных элементов, а также применение этой техники при анализе требований, интеграции информационных систем и согласовании корпоративных данных. Особое внимание мной уделено практическому использованию словаря данных, типичным ошибкам, рекомендациям по его ведению и ограничениям этой техники.</description>
+    </item>
     <item>
       <title>Разбор техник BABOK: Моделирование понятий</title>
       <link>http://localhost:1313/articles/bt-concept-modelling/</link>
