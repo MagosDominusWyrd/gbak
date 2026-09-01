@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Wed, 26 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Диаграммы потоков данных</title>
+      <link>http://localhost:1313/articles/bt-data-flow-diagrams/</link>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-data-flow-diagrams/</guid>
+      <description>Диаграммы потоков данных позволяют показать, откуда поступает информация, как она преобразуется внутри системы, где хранится и кому передается результат. В этой статье рассматриваются назначение DFD, четыре элемента техники по BABOK, уровни декомпозиции, различия логических и физических диаграмм, а также особенности их практического применения. Отдельное внимание мной уделено корпоративному примеру, типичным ошибкам, ограничениям техники и рекомендациям по использованию DFD в работе бизнес-аналитика.</description>
+    </item>
     <item>
       <title>Разбор техник BABOK: Словарь данных</title>
       <link>http://localhost:1313/articles/bt-data-dictionary/</link>
