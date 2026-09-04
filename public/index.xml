@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Корпоративный AI как задача управления знаниями</title>
+      <link>http://localhost:1313/articles/corp-ai-as-km-challenge/</link>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/corp-ai-as-km-challenge/</guid>
+      <description>Статья рассматривает управление знаниями как необходимый элемент корпоративного применения искусственного интеллекта. Особое внимание уделяется превращению результатов AI-экспериментов, промптов, решений и накопленного опыта в управляемые организационные активы, доступные для проверки и повторного использования. Рассматриваются жизненный цикл AI-знаний, роль базы знаний, связь с AI governance и literacy, а также подходы к постепенному формированию системы, позволяющей организации накапливать и использовать опыт работы с искусственным интеллектом.</description>
+    </item>
     <item>
       <title>Разбор техник BABOK: Диаграммы потоков данных</title>
       <link>http://localhost:1313/articles/bt-data-flow-diagrams/</link>
