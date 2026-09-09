@@ -2,19 +2,39 @@
    Базовая типографика
 ========================= */
 
+:root {
+  --content-width: 1000px;
+  --page-gutter: 40px;
+  --page-gutter-mobile: 20px;
+  --main-top: 48px;
+  --section-gap: 60px;
+  --heading-gap: 24px;
+  --font-body: 18px;
+  --font-page-title: 32px;
+  --font-article-title: 36px;
+  --font-section-title: 28px;
+  --font-subsection-title: 22px;
+  --font-article-section-title: 26px;
+  --font-article-subsection-title: 20px;
+  --font-list-title: 22px;
+  --font-list-summary: 15px;
+}
+
 body {
   margin: 0;
   font-family: 'Source Serif Pro', serif;
   background-color: #f5f5f5;
   color: #111;
   line-height: 1.75;
-  font-size: 18px;
+  font-size: var(--font-body);
 }
 
 .container {
-  max-width: 1000px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: calc(var(--content-width) + (var(--page-gutter) * 2));
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 var(--page-gutter);
 }
 
 /* =========================
@@ -56,20 +76,22 @@ body {
 ========================= */
 
 .hero {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 0;
+  margin-bottom: 40px;
   text-align: center;
 }
 
 .hero h1 {
   font-size: 56px;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 
 .hero p {
-  font-size: 20px;
+  font-size: 24px;
   max-width: 850px;
   margin: 0 auto;
+  line-height: 1.45;
+  font-weight: 600;
 }
 
 /* =========================
@@ -77,12 +99,14 @@ body {
 ========================= */
 
 h2 {
-  margin-top: 60px;
-  font-size: 32px;
+  margin-top: var(--section-gap);
+  font-size: var(--font-section-title);
+  line-height: 1.25;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: var(--font-subsection-title);
+  line-height: 1.3;
 }
 
 /* =========================
@@ -94,12 +118,18 @@ h3 {
   margin: 0 auto 80px auto;
 }
 
+.article > h1 {
+  font-size: var(--font-article-title);
+  line-height: 1.2;
+}
+
 .article-header {
   margin-bottom: 40px;
 }
 
 .article-header h1 {
-  font-size: 36px;
+  font-size: var(--font-article-title);
+  line-height: 1.2;
   margin-bottom: 20px;
 }
 
@@ -119,12 +149,14 @@ h3 {
 }
 
 .article-content h2 {
-  font-size: 26px;
+  font-size: var(--font-article-section-title);
+  line-height: 1.3;
   margin-top: 50px;
 }
 
 .article-content h3 {
-  font-size: 20px;
+  font-size: var(--font-article-subsection-title);
+  line-height: 1.35;
   margin-top: 35px;
 }
 
@@ -237,9 +269,9 @@ footer {
 ========================= */
 
 .news-page {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 60px 40px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .news-page h1 {
@@ -275,9 +307,9 @@ footer {
 ========================= */
 
 .page-section {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 40px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .page-content {
@@ -289,7 +321,7 @@ footer {
 }
 
 .page-content h2 {
-  margin-top: 60px;
+  margin-top: var(--section-gap);
 }
 
 #search-results {
@@ -310,9 +342,9 @@ footer {
 ========================= */
 
 .articles-page {
-  max-width: 1000px;   /* как у .container */
-  margin: 0 auto;
-  padding: 0 40px;  /* чтобы совпадало с главной */
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .articles-header h1 {
@@ -343,7 +375,7 @@ footer {
 }
 
 .article-title {
-  font-size: 22px;
+  font-size: var(--font-list-title);
   font-weight: 600;
   margin-bottom: 6px;
   line-height: 1.35;
@@ -353,13 +385,19 @@ footer {
   text-decoration: underline;
 }
 
-.article-summary {
+.latest-article .article-item h3 {
+  font-size: var(--font-list-title);
+  line-height: 1.35;
   margin-bottom: 6px;
-  font-size: 15px;
+}
+
+.article-item .article-summary {
+  margin-bottom: 6px;
+  font-size: var(--font-list-summary);
   line-height: 1.5;
 }
 
-.article-meta {
+.article-item .article-meta {
   font-size: 13px;
   color: #666;
 }
@@ -377,14 +415,14 @@ footer {
 }
 
 .book-title {
-  font-size: 17px;
+  font-size: var(--font-list-title);
   font-weight: 600;
   margin-bottom: 4px;
   line-height: 1.35;
 }
 
 .book-description {
-  font-size: 15px;
+  font-size: var(--font-list-summary);
   line-height: 1.5;
   margin-bottom: 4px;
 }
@@ -395,8 +433,8 @@ footer {
 }
 
 .books-page {
-  max-width: 1000px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 }
 
 /* =========================
@@ -404,13 +442,12 @@ footer {
 ========================= */
 
 .about-site h3 {
-  font-size: 22px;
+  font-size: var(--font-subsection-title);
   margin-top: 35px;
   margin-bottom: 12px;
 }
 
 .about-structure {
-  font-size: 24px;
   margin-top: 30px;
   margin-bottom: 18px;
 }
@@ -421,15 +458,14 @@ footer {
 
 main h1 {
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: var(--heading-gap);
+  font-size: var(--font-page-title);
+  line-height: 1.2;
 }
 
 main {
   overflow: auto;
-}
-
-main {
-  padding-top: 48px;
+  padding-top: var(--main-top);
 }
 
 .category-filter {
@@ -496,4 +532,100 @@ main {
   margin-top: 35px;
   color: #777777;
   line-height: 1.6;
+}
+
+/* =========================
+   Единая геометрия страниц
+========================= */
+
+.about-site,
+.latest-article,
+.articles-page,
+.books-page,
+.page-section,
+.news-page {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.about-site > h2:first-child,
+.latest-article > h2:first-child {
+  margin-top: 0;
+  margin-bottom: var(--heading-gap);
+}
+
+.articles-header h1,
+.books-header h1,
+.page-section > h1 {
+  margin-bottom: var(--heading-gap);
+}
+
+footer {
+  padding-bottom: 32px;
+}
+
+@media (max-width: 700px) {
+  :root {
+    --page-gutter: var(--page-gutter-mobile);
+    --main-top: 36px;
+    --section-gap: 48px;
+  }
+
+  .site-header {
+    padding-top: 16px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 12px 24px;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  main h1 {
+    font-size: var(--font-page-title);
+  }
+
+  h2 {
+    font-size: var(--font-section-title);
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  .article > h1,
+  .article-header h1 {
+    font-size: var(--font-page-title);
+  }
+
+  .articles-search,
+  .category-filter {
+    width: 100%;
+  }
+
+  .articles-search input {
+    width: 100%;
+  }
+}
+
+.latest-article {
+  margin-top: var(--section-gap);
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    margin-bottom: 32px;
+  }
+
+  .hero h1 {
+    margin-bottom: 12px;
+  }
 }
