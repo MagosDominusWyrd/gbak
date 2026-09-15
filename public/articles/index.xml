@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Fri, 04 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Добыча данных</title>
+      <link>http://localhost:1313/articles/bt-data-mining/</link>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-data-mining/</guid>
+      <description>Статья посвящена технике BABOK «Добыча данных» и ее применению для выявления полезных закономерностей и отношений в больших объемах данных. В ней рассматриваются назначение техники, подготовка и анализ данных, моделирование и внедрение полученных результатов в процессы принятия решений. Практический пример показывает использование добычи данных в работе бизнес-аналитика, а также основные ограничения, типичные ошибки и рекомендации по применению техники.</description>
+    </item>
     <item>
       <title>Корпоративный AI как задача управления знаниями</title>
       <link>http://localhost:1313/articles/corp-ai-as-km-challenge/</link>
