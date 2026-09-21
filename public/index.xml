@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 15 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Моделирование данных</title>
+      <link>http://localhost:1313/articles/bt-data-modelling/</link>
+      <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-data-modelling/</guid>
+      <description>Моделирование данных позволяет бизнес-аналитику формализовать представление о значимой для предметной области информации, ее характеристиках и взаимосвязях. В этой статье рассматриваются назначение и элементы техники Data Modelling согласно BABOK, а также различия между концептуальными, логическими и физическими моделями данных. Практический пример, типичные ошибки и рекомендации показывают, как использовать моделирование данных для анализа требований, согласования терминологии и поддержки проектирования решений.</description>
+    </item>
     <item>
       <title>Разбор техник BABOK: Добыча данных</title>
       <link>http://localhost:1313/articles/bt-data-mining/</link>
