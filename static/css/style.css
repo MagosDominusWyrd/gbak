@@ -629,3 +629,109 @@ footer {
     margin-bottom: 12px;
   }
 }
+
+/* Research: table of contents */
+
+.research-toc {
+  margin: 2.5rem 0 3rem;
+}
+
+.research-toc > h2 {
+  margin-bottom: 1rem;
+}
+
+.research-toc #TableOfContents ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.research-toc #TableOfContents > ul > li {
+  margin: 0.55rem 0;
+}
+
+.research-toc #TableOfContents ul ul {
+  margin-top: 0.45rem;
+  padding-left: 1.5rem;
+}
+
+.research-toc #TableOfContents ul ul li {
+  margin: 0.35rem 0;
+}
+
+.research-toc #TableOfContents a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.research-toc #TableOfContents a:hover {
+  text-decoration: underline;
+}
+
+/* Research: return to table of contents */
+
+.research-toc-return {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.25rem;
+  z-index: 20;
+
+  color: inherit;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-decoration: none;
+
+  opacity: 0.55;
+  transition: opacity 0.2s ease;
+}
+
+.research-toc-return:hover,
+.research-toc-return:focus-visible {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .research-toc-return {
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Article tables: classic grid without zebra striping */
+
+.article-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 40px 0;
+  font-size: 16px;
+}
+
+.article-content th,
+.article-content td {
+  border: 1px solid #d8d8d8;
+  padding: 12px 14px;
+  vertical-align: top;
+}
+
+.article-content th {
+  background: transparent;
+  font-weight: 600;
+}
+
+.article-content tr:nth-child(even) {
+  background: transparent;
+}
+
+.article-content th:first-child {
+  text-align: left;
+}
+
+.article-content th:not(:first-child) {
+  text-align: center;
+}
+
+.article-content table {
+  table-layout: fixed;
+}

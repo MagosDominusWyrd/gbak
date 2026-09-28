@@ -1,0 +1,20 @@
+{{- $src := .Destination -}}
+{{- $image := resources.Get $src -}}
+
+{{- if $image -}}
+<figure>
+  <img
+    src="{{ $image.RelPermalink }}"
+    alt="{{ .Text }}"
+    {{- with .Title }} title="{{ . }}"{{ end }}
+    loading="lazy"
+  >
+</figure>
+{{- else -}}
+<img
+  src="{{ $src | safeURL }}"
+  alt="{{ .Text }}"
+  {{- with .Title }} title="{{ . }}"{{ end }}
+  loading="lazy"
+>
+{{- end -}}

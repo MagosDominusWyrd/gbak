@@ -5,8 +5,32 @@
   <h1>{{ .Title }}</h1>
 
   <div class="article-content">
+
+    {{ if eq .Section "researches" }}
+      <section
+        class="research-toc"
+        id="research-toc"
+        aria-labelledby="research-toc-title"
+      >
+        <h2 id="research-toc-title">Содержание</h2>
+
+        {{ .TableOfContents }}
+      </section>
+    {{ end }}
+
     {{ .Content }}
+
   </div>
+
+  {{ if eq .Section "researches" }}
+    <a
+      class="research-toc-return"
+      href="#research-toc"
+      aria-label="Вернуться к содержанию"
+    >
+      К содержанию ↑
+    </a>
+  {{ end }}
 
 </article>
 
