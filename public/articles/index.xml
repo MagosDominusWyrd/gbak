@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 21 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Анализ решений</title>
+      <link>http://localhost:1313/articles/bt-decision-analysis/</link>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-decision-analysis/</guid>
+      <description>Техника BABOK Анализ решений (Decision Analysis) помогает бизнес-аналитику формализованно оценивать проблему и возможные варианты ее решения в условиях неопределенности. В этой статье мной рассматриваются основные элементы этой техники, включая компоненты анализа решений, матрицы и деревья решений, а также работу с компромиссами между различными целями. На практическом примере я постарался показать, как использовать анализ решений для сравнения альтернатив, обоснования выбора и снижения влияния субъективных оценок на принятие решения.</description>
+    </item>
     <item>
       <title>Разбор техник BABOK: Моделирование данных</title>
       <link>http://localhost:1313/articles/bt-data-modelling/</link>
