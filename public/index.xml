@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Моделирование решений</title>
+      <link>http://localhost:1313/articles/bt-decision-modelling/</link>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-decision-modelling/</guid>
+      <description>В статье мной рассматривается техника BABOK «Моделирование решений» (Decision Modelling), ее назначение, основные элементы и особенности применения в бизнес-анализе. Разбираются три подхода к представлению логики принятия решений: таблицы решений, деревья решений и диаграммы требований к решениям, а также приводится практический пример их использования в корпоративной среде. Особое внимание мной уделяется эффективным практикам, распространенным ошибкам, преимуществам и ограничениям техники при формализации бизнес-правил и подготовке решений к автоматизации.</description>
+    </item>
     <item>
       <title>Разбор техник BABOK: Анализ решений</title>
       <link>http://localhost:1313/articles/bt-decision-analysis/</link>
