@@ -6,8 +6,15 @@
     <description>Recent content in Главная on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Анализ документов</title>
+      <link>http://localhost:1313/articles/bt-document-analysis/</link>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-document-analysis/</guid>
+      <description>В этой статье мной рассматривается техника BABOK «Анализ документов», ее назначение, основные элементы и особенности применения в деятельности бизнес-аналитика. На примере я постарался показать, как изучение существующей документации помогает выявлять требования, восстанавливать контекст бизнес-процессов, обнаруживать противоречия и определять пробелы в информации. Особое внимание мной уделено эффективным практикам, типичным ошибкам и ограничениям этой техники, а также рекомендациям по повышению достоверности и практической ценности получаемых результатов.</description>
+    </item>
     <item>
       <title>Разбор техник BABOK: Моделирование решений</title>
       <link>http://localhost:1313/articles/bt-decision-modelling/</link>
