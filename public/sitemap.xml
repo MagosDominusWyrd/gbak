@@ -171,6 +171,8 @@
   </url><url>
     <loc>http://localhost:1313/books/</loc>
   </url><url>
+    <loc>http://localhost:1313/privacy/</loc>
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/books/process-reality/</loc>
