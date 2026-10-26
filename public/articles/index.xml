@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Оценка</title>
+      <link>http://localhost:1313/articles/bt-estimation/</link>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-estimation/</guid>
+      <description>В этой статье мной рассматривается техника BABOK «Оценка» (Estimation), предназначенная для прогнозирования стоимости и трудозатрат, необходимых для выполнения планируемых действий. Подробно разбираются методы оценки, источники информации, критерии правильности, точности и надежности оценок, а также способы работы с неопределенностью. На практическом примере я постарался продемонстрировать применение техники в корпоративной среде, также в статье рассматриваются типичные ошибки, ограничения и рекомендации по повышению обоснованности оценок.</description>
+    </item>
     <item>
       <title>Разбор техник BABOK: Анализ документов</title>
       <link>http://localhost:1313/articles/bt-document-analysis/</link>
