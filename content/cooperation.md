@@ -18,6 +18,8 @@ layout: "static-page"
 
 **[Телеграм-канал (оповещения о новых статьях на сайте)](https://t.me/gbak_official)**
 
+**[Я на хабре](https://habr.com/ru/users/GBAK/)**
+
 **[Блог в Tenchat](https://tenchat.ru/gbak)**
 
 **[Блог на vc.ru (не ведется, доступен архив публикаций)](https://vc.ru/id5472244)**
