@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Инструментальные модели и границы понимания предметной области</title>
+      <link>http://localhost:1313/articles/instrumental-models-and-the-boundaries/</link>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/instrumental-models-and-the-boundaries/</guid>
+      <description>В этой статье рассматривается проблема подмены понимания предметной области освоением инструментальных моделей, реализованных в корпоративных информационных системах. На основе научных исследований мной анализируются когнитивные предпосылки этого явления, влияние инструментальных ограничений на постановку задач, профессиональные компетенции и организационные решения. Особое внимание уделяется разграничению обоснованного использования специализированных инструментов и ситуаций, в которых их концептуальные модели начинают определять представления об исследуемой деятельности.</description>
+    </item>
     <item>
       <title>Sophia: универсальная классификация процессов коммерческой организации</title>
       <link>http://localhost:1313/articles/sophia-introduction/</link>
