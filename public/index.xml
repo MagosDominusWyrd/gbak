@@ -401,13 +401,6 @@
       <description>Немного о моей книге</description>
     </item>
     <item>
-      <title>Playbook: быстрая процессная диагностика компании за 72 часа</title>
-      <link>http://localhost:1313/books/playbook-72hours-diagnosis/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/books/playbook-72hours-diagnosis/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Конфиденциальность</title>
       <link>http://localhost:1313/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
