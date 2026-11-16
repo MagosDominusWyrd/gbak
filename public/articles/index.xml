@@ -6,8 +6,15 @@
     <description>Recent content in Articles on GBAK</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Разбор техник BABOK: Финансовый анализ</title>
+      <link>http://localhost:1313/articles/bt-financial-analysis/</link>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/bt-financial-analysis/</guid>
+      <description>В этой статье рассматривается техника «Финансовый анализ» (Financial Analysis), ее назначение, основные элементы и роль в экономическом обосновании изменений. Подробно раскрываются методы оценки затрат, выгод и финансовой эффективности инвестиций, включая TCO, ROI, NPV, IRR и период окупаемости, а также приводится практический пример автоматизации корпоративного процесса. Особое внимание уделяется типичным ошибкам, ограничениям техники и практическим рекомендациям по ее применению при выборе и оценке решений.</description>
+    </item>
     <item>
       <title>Инструментальные модели и границы понимания предметной области</title>
       <link>http://localhost:1313/articles/instrumental-models-and-the-boundaries/</link>
