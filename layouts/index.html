@@ -1,3 +1,4 @@
+
 {{ define "main" }}
 
 <section class="hero">
@@ -48,5 +49,37 @@
 
 </section>
 
-{{ end }}
+<section class="support-section">
+  <h2>Хотите поддержать выход новых материалов?</h2>
 
+  <p>
+    Вы можете поддержать развитие GBAK добровольным пожертвованием через Boosty.
+  </p>
+
+  <a
+    class="support-button"
+    href="https://boosty.to/gbak_official/donate"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Поддержать на Boosty
+  </a>
+
+  <a
+    class="support-qr-link"
+    href="https://boosty.to/gbak_official/donate"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Перейти на страницу поддержки GBAK в Boosty"
+  >
+    <img
+      src="{{ "img/boosty-qr.png" | relURL }}"
+      alt="QR-код для поддержки GBAK через Boosty"
+      width="150"
+      height="150"
+      loading="lazy"
+    >
+  </a>
+</section>
+
+{{ end }}
