@@ -195,7 +195,5 @@
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/books/process-reality/</loc>
-  </url><url>
-    <loc>http://localhost:1313/cooperation/</loc>
   </url>
 </urlset>
